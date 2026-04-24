@@ -1,0 +1,17 @@
+# Project Intelligence - Kasaalik Project
+
+## Workflow Preferences
+- Always read all files in `memory-bank/` at the beginning of each task.
+- Keep Memory Bank updated after significant implementation changes.
+- Prioritize practical, reproducible ML steps over complex one-off experiments.
+
+## Competition-Specific Rules
+- Optimize for multi-class log loss.
+- Keep submission columns exactly as required:
+  - `id,Status_C,Status_CL,Status_D`
+- Use stratified validation when possible.
+
+## Engineering Notes
+- Start with a strong baseline before feature engineering.
+- Record each experiment with model type, parameters, and score.
+- Prefer deterministic runs with fixed random seeds.
