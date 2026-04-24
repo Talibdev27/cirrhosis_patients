@@ -2,7 +2,7 @@
 
 ## Current Status
 
-Memory Bank is initialized and a clean final notebook workflow has been prepared.
+Memory Bank is initialized, clean final notebook is ready, and repository README has been added.
 
 ## Completed
 
@@ -17,6 +17,7 @@ Memory Bank is initialized and a clean final notebook workflow has been prepared
   - linear and reproducible flow
   - portable data paths (Kaggle/local)
   - LGB + XGB + CatBoost CV and blend-based submission
+- `README.md` added with setup, run instructions, workflow summary, and submission format.
 
 ## Pending
 
