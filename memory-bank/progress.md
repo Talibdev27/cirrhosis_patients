@@ -2,7 +2,7 @@
 
 ## Current Status
 
-Memory Bank is initialized and the first baseline notebook pipeline is implemented.
+Memory Bank is initialized and a clean final notebook workflow has been prepared.
 
 ## Completed
 
@@ -13,12 +13,16 @@ Memory Bank is initialized and the first baseline notebook pipeline is implement
   - stratified CV evaluation with log loss
   - end-to-end preprocessing + multinomial logistic regression
   - submission file generation (`/kaggle/working/submission.csv`)
+- Review-ready notebook created: `siroz_finel_clean.ipynb`:
+  - linear and reproducible flow
+  - portable data paths (Kaggle/local)
+  - LGB + XGB + CatBoost CV and blend-based submission
 
 ## Pending
 
 - Data audit (column types, nulls, class distribution).
-- Execute baseline cells and capture actual fold/OOF metrics.
-- Verify generated submission on Kaggle leaderboard.
+- Execute `siroz_finel_clean.ipynb` and capture actual fold/OOF metrics.
+- Verify final `submission.csv` on Kaggle leaderboard.
 - Experiment tracking for iterative improvements.
 
 ## Known Risks
@@ -29,6 +33,6 @@ Memory Bank is initialized and the first baseline notebook pipeline is implement
 
 ## Definition of Near-Term Done
 
-- Baseline notebook executed end-to-end without errors.
+- Clean final notebook executed end-to-end without errors.
 - OOF log loss and leaderboard score documented.
-- Next improved model experiment started (CatBoost/LightGBM/XGBoost).
+- Final model blend choice validated against leaderboard.

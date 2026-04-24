@@ -2,26 +2,24 @@
 
 ## Current Focus
 
-Run the first reproducible baseline in the notebook and produce a valid `submission.csv` for the competition.
+Prepare one clean, review-ready final notebook with a linear, reproducible workflow and valid submission output.
 
 ## What Was Just Done
 
-- Added baseline modeling section to `notebook7cded29dbc.ipynb`:
-  - train/test reload from Kaggle input path
-  - filter target labels to `C`, `CL`, `D`
-  - simple feature engineering (`Age_years`)
-  - preprocessing with median/most-frequent imputation
-  - OneHot encoding for categorical features
-  - multinomial logistic regression model
-  - stratified 5-fold CV with multi-class log loss
-  - final full-train fit and submission export to `/kaggle/working/submission.csv`
+- Created `siroz_finel_clean.ipynb` as a clean final notebook:
+  - portable data path resolution (`/kaggle/input/...` or local `data/`)
+  - single linear flow without duplicated experimentation cells
+  - feature engineering and consistent feature list construction
+  - stratified 5-fold CV for LightGBM, XGBoost, CatBoost
+  - blend search over selected candidate weights
+  - final `submission.csv` generation in required format
 
 ## Immediate Next Steps
 
-1. Run the new notebook cells and record fold scores + OOF log loss.
-2. Upload the generated `submission.csv` to Kaggle and note leaderboard score.
-3. Compare better models (CatBoost/LightGBM/XGBoost) against baseline.
-4. Add feature engineering for missingness and robust age handling.
+1. Execute `siroz_finel_clean.ipynb` top-to-bottom in Kaggle.
+2. Save CV scores and leaderboard score in Memory Bank.
+3. Keep `notebook7cded29dbc.ipynb` for experiments and use clean notebook for final review/submission.
+4. Optionally lock final blend weights after leaderboard confirmation.
 
 ## Active Decisions
 
