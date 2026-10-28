@@ -1,0 +1,13 @@
+# Local AI-tooling context (kept on disk, not published)
+memory-bank/
+.cursorrules
+
+# Data and generated outputs
+data/
+submission.csv
+catboost_info/
+
+# OS / editor
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
