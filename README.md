@@ -18,7 +18,7 @@ Stratified 5-fold cross-validation, scored on out-of-fold (OOF) predictions over
 | **Blend** (0.28 LGB · 0.67 XGB · 0.05 CAT) | **0.3706** | 0.0095 |
 
 All three boosters are trained on the competition data plus the original clinical dataset (see Findings).
-Leaderboard (late submission): *not yet submitted*.
+**Leaderboard (late submission, Oct 2026):** public **0.35629**, private **0.34867**. On the public leaderboard that would rank 2nd of 35 teams. It was submitted after the close, so it isn't officially ranked. The test score is better than the OOF score, so the CV estimate is, if anything, conservative.
 
 ## Findings
 
